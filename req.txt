@@ -1,0 +1,6 @@
+fastapi
+uvicorn[standard]
+pdfplumber
+python-multipart
+spacy
+# download a small model after install, e.g., en_core_web_sm
