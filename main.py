@@ -13,7 +13,7 @@ from fastapi.middleware.cors import CORSMiddleware
 app = FastAPI(title="Resume Parser: Skills & Experience")
 
 # Load spaCy once
-nlp = spacy.load("en_core_web_sm")
+# nlp = spacy.load("en_core_web_sm")
 
 
 # Configure CORS
@@ -247,7 +247,7 @@ def fetch_course_recommendations(
 
     # genai.configure(api_key="AIzaSyC-6Us_1jOdWdRpyLsmtjMAJ_PU1Wzm_kY")
 
-    client = genai.Client(api_key="AIzaSyC-6Us_1jOdWdRpyLsmtjMAJ_PU1Wzm_kY")
+    client = genai.Client(api_key="your api key here")
 
     response = client.models.generate_content(model="gemini-2.0-flash", contents=prompt)
     print(response.text)
